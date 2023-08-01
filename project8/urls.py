@@ -18,11 +18,11 @@ from django.contrib import admin
 from django.urls import path,include
 import app1,app2
 
-#from app3.views import *
+from app3.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('app1/',include('app1.urls')),
     path('app2/',include('app2.urls')),
-    #path('page3/',page3,name='page3'),
+    path('page3/',page3,name='page3')
 ]
